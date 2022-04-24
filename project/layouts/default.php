@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="/1804/project/webroot/styles.css">
 		<title><?= $title ?></title> 
 			<!-- выводим тайтл страницы --> 
 	</head>
