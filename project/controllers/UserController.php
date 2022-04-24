@@ -48,6 +48,7 @@
 		// }
         public function first($params)
 		{   
+
             for ($i=1; $i <= $params['n']; $i++) {  
             $p = $this->users[$i];
                 foreach($p as $row){
