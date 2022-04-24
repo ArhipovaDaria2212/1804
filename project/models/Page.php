@@ -6,11 +6,13 @@
 	{
 		public function getById($id)
 		{
-			return $this->findOne("SELECT * FROM page WHERE id=$id");
+			return $this->findOne("SELECT * FROM pages WHERE id=$id");
 		}
 		
-		public function getAll()
+		public function getByRange($from, $to)
 		{
-			return $this->findMany("SELECT id, title FROM page");
+			return $this->findMany("SELECT * FROM pages 
+				WHERE id>=$from AND id<=$to"); 
 		}
 	}
+?>

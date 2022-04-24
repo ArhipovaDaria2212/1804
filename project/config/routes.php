@@ -4,7 +4,7 @@
 	return [
 		new Route('/product/:n/', 'product', 'show'), 
 		new Route('/product/all/', 'product', 'all'),
-		new Route('/page/:id/', 'page', 'show'),
+		new Route('/page', 'page', 'test'),
 		new Route('/user/:id/:key/', 'user', 'info'), 
 		// new Route('/user/:id/', 'user', 'show'),
 		// new Route('/user/all/', 'user', 'all'),
