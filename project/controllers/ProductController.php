@@ -42,5 +42,9 @@
                 ],
             ];
 		}
+        public function show($params)
+		{   
+            var_dump($this->products[$params['n']]);
+		}
     }
 ?>
