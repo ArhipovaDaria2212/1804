@@ -36,9 +36,19 @@
         //     $s = $p[$params['key']];
         //     echo $s;
 		// }
-        public function all()
-		{
-            for ($i=1; $i <= 5; $i++) {  
+        // public function all()
+		// {
+        //     for ($i=1; $i <= 5; $i++) {  
+        //     $p = $this->users[$i];
+        //         foreach($p as $row){
+        //         echo $row . "\r\n";
+        //         }
+        //         echo '<br>';
+        //     }
+		// }
+        public function first($params)
+		{   
+            for ($i=1; $i <= $params['n']; $i++) {  
             $p = $this->users[$i];
                 foreach($p as $row){
                 echo $row . "\r\n";
@@ -46,6 +56,5 @@
                 echo '<br>';
             }
 		}
-        
 	}
 ?>
