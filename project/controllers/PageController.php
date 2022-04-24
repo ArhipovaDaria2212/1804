@@ -5,14 +5,10 @@
 	class PageController extends 
 		Controller 
 	{
-        public function show1()
+        public function act($params)
 		{
-			echo '1';
+			var_dump($params); // ['var1' 
+				//=> 'eee', 'var2' => 'bbb'] 
 		}
-		
-		public function show2()
-		{
-			echo '2';
-		}
-	}
+    }
 ?>
