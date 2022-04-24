@@ -25,8 +25,16 @@
 		
 		public function show($params)
 		{
-			echo $this->users[ $params['id'] 
-				];
+            $p = $this->users[$params['id']];
+            foreach ($p as $row) {
+                echo $row . "\r\n";
+            }
+		}
+        public function info($params)
+		{
+			$p = $this->users[$params['id']];
+            $s = $p[$params['key']];
+            echo $s;
 		}
 	}
 ?>
