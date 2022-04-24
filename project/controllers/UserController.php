@@ -23,18 +23,29 @@
             ];
 		}
 		
-		public function show($params)
+		// public function show($params)
+		// {
+        //     $p = $this->users[$params['id']];
+        //     foreach ($p as $row) {
+        //         echo $row . "\r\n";
+        //     }
+		// }
+        // public function info($params)
+		// {
+		// 	$p = $this->users[$params['id']];
+        //     $s = $p[$params['key']];
+        //     echo $s;
+		// }
+        public function all()
 		{
-            $p = $this->users[$params['id']];
-            foreach ($p as $row) {
+            for ($i=1; $i <= 5; $i++) {  
+            $p = $this->users[$i];
+                foreach($p as $row){
                 echo $row . "\r\n";
+                }
+                echo '<br>';
             }
 		}
-        public function info($params)
-		{
-			$p = $this->users[$params['id']];
-            $s = $p[$params['key']];
-            echo $s;
-		}
+        
 	}
 ?>
