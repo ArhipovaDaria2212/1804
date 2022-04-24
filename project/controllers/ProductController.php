@@ -46,5 +46,10 @@
 		{   
             return $this->render('product/show', $this->products[$params['n']]);
 		}
+        public function all()
+        {   
+            $p = $this->products;
+            return $this->render('product/all', $p);
+		}
     }
 ?>
