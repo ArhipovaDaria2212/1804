@@ -16,6 +16,7 @@
 			</aside>
 			<main>
 				<?= $content ?>
+				<img src="\1804\project\webroot\на ките.jpg" alt="альтернативный текст">
 			</main>
 			<aside class="sidebar right">
 				правый сайдбар
